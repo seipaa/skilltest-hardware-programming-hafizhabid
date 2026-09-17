@@ -3,8 +3,7 @@
 Hasil pengerjaan take-home technical assessment untuk posisi **Hardware Programming**.
 
 - **Nama:** Hafizh 'Abid Khalish
-- **Email:** fizh.lish@gmail.com
-
+- 
 ## Isi Repository
 
 | Folder | Soal | Deskripsi | Tech Stack |
