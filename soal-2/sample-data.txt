@@ -1,0 +1,10 @@
+{"temp":28.5,"humidity":65,"pressure":1012}
+{"temp":31.2,"humidity":58,"pressure":1009}
+{"temp":"27.8","humidity":"70","pressure":"1015"}
+{"temp":null,"humidity":65,"pressure":1012}
+{"temp":28.5,"pressure":1012}
+{"temp":9999,"humidity":65,"pressure":1012}
+{"temp":28.5,"humidity":-5,"pressure":1012}
+{"temp":28.5,"humidity":65,"pressure":1012
+bukan json sama sekali
+{"temp":"abc","humidity":65,"pressure":1012}

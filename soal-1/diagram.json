@@ -1,0 +1,140 @@
+{
+    "version": 1,
+    "author": "Hafizh 'Abid Khalish",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "board-esp32-devkit-c-v4",
+            "id": "esp",
+            "top": 0,
+            "left": 0,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-potentiometer",
+            "id": "pot1",
+            "top": -130,
+            "left": 180,
+            "attrs": {
+                "label": "SIMULASI SENSOR SUHU"
+            }
+        },
+        {
+            "type": "wokwi-pushbutton",
+            "id": "btn1",
+            "top": -120,
+            "left": 360,
+            "attrs": {
+                "label": "LIMIT SWITCH",
+                "color": "green"
+            }
+        },
+        {
+            "type": "wokwi-led",
+            "id": "led1",
+            "top": 120,
+            "left": 260,
+            "attrs": {
+                "color": "yellow",
+                "label": "STATUS"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r1",
+            "top": 180,
+            "left": 260,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-led",
+            "id": "led2",
+            "top": 120,
+            "left": 370,
+            "attrs": {
+                "color": "red",
+                "label": "MOTOR (PWM)"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r2",
+            "top": 180,
+            "left": 370,
+            "attrs": {
+                "value": "220"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "esp:3V3",
+            "pot1:VCC",
+            "red",
+            []
+        ],
+        [
+            "esp:GND.1",
+            "pot1:GND",
+            "black",
+            []
+        ],
+        [
+            "pot1:SIG",
+            "esp:D34",
+            "green",
+            []
+        ],
+        [
+            "btn1:1.l",
+            "esp:GND.2",
+            "black",
+            []
+        ],
+        [
+            "btn1:2.l",
+            "esp:D14",
+            "blue",
+            []
+        ],
+        [
+            "esp:D27",
+            "led1:A",
+            "yellow",
+            []
+        ],
+        [
+            "led1:C",
+            "r1:1",
+            "black",
+            []
+        ],
+        [
+            "r1:2",
+            "esp:GND.2",
+            "black",
+            []
+        ],
+        [
+            "esp:D25",
+            "led2:A",
+            "orange",
+            []
+        ],
+        [
+            "led2:C",
+            "r2:1",
+            "black",
+            []
+        ],
+        [
+            "r2:2",
+            "esp:GND.2",
+            "black",
+            []
+        ]
+    ],
+    "dependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "name": "skilltest-hardware-programming-hafizhabid",
+  "version": "1.0.0",
+  "description": "Stechoq Hardware Programming Technical Assessment - Hafizh 'Abid Khalish",
+  "private": true,
+  "scripts": {
+    "install:soal-2": "npm --prefix soal-2 install",
+    "mock-api": "npm --prefix soal-2 run mock-api",
+    "start": "npm --prefix soal-2 start",
+    "start:soal-2": "npm --prefix soal-2 start"
+  },
+  "author": "Hafizh 'Abid Khalish"
+}
